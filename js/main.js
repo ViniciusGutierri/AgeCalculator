@@ -38,7 +38,7 @@ function calculate() {
     else if (yy1 < 1900) {
         resultTitle.innerHTML = "*Enter a year above 1900";
     }
-    else if (dd1 < 1) {
+    else if (dd1 < 1 || dd1 > 31) {
         resultTitle.innerHTML = "*Invalid date";  
     }
     else if (mm1 < 1 || mm1 > 12) {
